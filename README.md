@@ -18,7 +18,7 @@ Make sure you have the following installed:
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/lvimuth/django-crud-project.git
+    git clone https://github.com/your-username/django-crud-project.git
     ```
 
 2. Navigate to the project directory:
@@ -32,23 +32,6 @@ Make sure you have the following installed:
     ```bash
     pip install -r requirements.txt
     ```
-### Database Configuration
-
-Update the `DATABASES` configuration in `settings.py` as follows:
-
-```python
-# settings.py
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'employeedb',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3310',
-    }
-}
 
 ### Usage
 
@@ -65,6 +48,25 @@ DATABASES = {
     ```
 
 3. Access the application in your web browser at [http://localhost:8000/employee/list/](http://localhost:8000/employee/list/).
+
+4. ### Database Configuration
+
+Update the `DATABASES` configuration in `settings.py` as follows:
+
+```python
+# settings.py
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employeedb',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3310',
+    }
+}
+```
 
 ## Features
 
@@ -92,6 +94,3 @@ DATABASES = {
 
 Feel free to contribute to the project by opening issues or submitting pull requests.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
