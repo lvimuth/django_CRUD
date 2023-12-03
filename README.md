@@ -32,6 +32,23 @@ Make sure you have the following installed:
     ```bash
     pip install -r requirements.txt
     ```
+### Database Configuration
+
+Update the `DATABASES` configuration in `settings.py` as follows:
+
+```python
+# settings.py
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'employeedb',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3310',
+    }
+}
 
 ### Usage
 
